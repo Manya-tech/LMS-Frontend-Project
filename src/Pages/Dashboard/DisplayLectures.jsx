@@ -30,9 +30,9 @@ function DisplayLectures(){
                 <div className="text-center text-2xl font-semibold text-yellow-500">
                     Course Name : {state?.title}
                 </div>
-                {lectures && lectures.length>0 && <div className="w-full flex justify-center gap-10">
+                {lectures && lectures.length>0 && <div className="w-full flex flex-col sm:flex-row justify-center gap-5 sm:gap-10">
                     {/* Left section for playing videos and displaying course details to the admin */}
-                    <div className="space-y-5 w-1/2 p-2 rounded-lg shadow-[0_0_10px_black]">
+                    <div className="space-y-5 w-full sm:w-1/2 p-2 rounded-lg shadow-[0_0_10px_black]">
                         <video 
                             className="w-full object-fit rounded-tl-lg rounded-tr-lg"
                             src={lectures && lectures[currentVideo]?.lecture.secure_url}
@@ -43,7 +43,7 @@ function DisplayLectures(){
                         >
                             Your browser does not support the video tag.
                         </video>
-                        <div className="text-xl">
+                        <div className="sm:text-xl">
                             <h1>
                                 <span className="text-yellow-500">
                                     Title :&nbsp;
@@ -59,8 +59,8 @@ function DisplayLectures(){
                         </div>
                     </div>
                     {/* Right section for displaying list of lectures */}
-                    <ul className="w-[28rem] p-4 rounded-lg shadow-[0_0_10px_black] space-y-4">
-                        <li className="text-2xl mb-10 font-semibold text-yellow-500 flex items-center justify-between">
+                    <ul className="w-full sm:w-[28rem] p-4 rounded-lg shadow-[0_0_10px_black] space-y-2 sm:space-y-4">
+                        <li className="text-xl sm:text-2xl mb-6 sm:mb-10 font-semibold text-yellow-500 flex items-center justify-between">
                             <p>Lectures List</p>
                             {role==="ADMIN" && (
                                 <button onClick={()=> navigate('/course/addlecture', {state: {...state}})} className="btn-primary px-2 py-1 rounded-md text-sm">
@@ -81,7 +81,7 @@ function DisplayLectures(){
                                         {lecture.title}
                                     </p>
                                     {role==="ADMIN" && (
-                                        <button onClick={() => onLectureDelete(state?._id, lecture?._id)} className="btn btn-sm btn-outline btn-error px-2 py-1 rounded-md text-sm">
+                                        <button onClick={() => onLectureDelete(state?._id, lecture?._id)} className="mt-0 btn btn-sm btn-outline btn-error px-2 py-1 rounded-md text-sm">
                                             Delete
                                         </button>       
                                     )}

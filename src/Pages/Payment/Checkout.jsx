@@ -66,10 +66,10 @@ function Checkout(){
     return (
         <HomeLayout>
             <form 
-                className="min-h-[90vh] pt-12 px-3 sm:px-20 flex flex-col justify-center items-center text-white"
+                className="min-h-[90vh] sm:pt-12 sm:px-20 flex flex-col justify-center items-center text-white"
                 onSubmit={handleSubscription}
             >
-                <div className="relative w-96 h-[26rem] flex flex-col justify-center items-center shadow-[0_0_10px_black] rounded-lg ">
+                <div className="relative w-[90%] left-0 sm:w-96 h-[26rem] flex flex-col justify-center items-center shadow-[0_0_10px_black] rounded-lg ">
                     <h1 className="absolute top-0 w-full text-center py-4 text-2xl font-bold rounded-tl-lg rounded-tr-lg bg-yellow-500">Subscription Bundle</h1>
                     <div className="px-4 space-y-4 text-center">
                         <p className="text-[17px]">

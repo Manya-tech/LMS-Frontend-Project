@@ -7,7 +7,7 @@ function CheckoutFailure() {
     return (
         <HomeLayout>
             <div className="min-h-[90vh] flex items-center justify-center text-white">
-                <div className="relative w-96 h-[26rem] flex flex-col items-center justify-center shadow-[0_0_10px_black] rounded-lg">
+                <div className="relative w-[90%] sm:w-96 h-[26rem] flex flex-col items-center justify-center shadow-[0_0_10px_black] rounded-lg">
                     <h1 className="absolute top-0 w-full py-4 bg-red-500 text-2xl text-center font-bold rounded-tl-lg rounded-tr-lg">
                         Payment Failed
                     </h1>
