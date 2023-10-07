@@ -26,7 +26,6 @@ function AddLecture(){
     }
 
     function removeVideo(){
-        console.log("run")
         setUserInput({
             ...userInput,
             videoSrc: "",
