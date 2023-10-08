@@ -58,8 +58,6 @@ function Contact(){
                     message: "",
                 });
             }
-
-            console.log(contactResponse);
         } catch (error) {
             toast.error(error?.response?.data?.message || "Operation Failed");
         }
