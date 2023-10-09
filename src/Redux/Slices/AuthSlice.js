@@ -35,7 +35,7 @@ export const logIn = createAsyncThunk("auth/login", async (data) => {
 
         return (await res).data;
     } catch (error) {
-        toast.error(error?.message);
+        toast.error(error?.response?.data?.message);
     }
 })
 
@@ -49,7 +49,7 @@ export const logOut = createAsyncThunk("auth/logout", async () => {
         })
         return (await res).data;
     } catch (error) {
-        toast.error(error?.message);
+        toast.error(error?.response?.data?.message);
     }
 })
 
@@ -63,7 +63,7 @@ export const updateProfile = createAsyncThunk("user/update", async (data) => {
         })
         return (await res).data;
     } catch (error) {
-        toast.error(error?.message);
+        toast.error(error?.response?.data?.message);
     }
 })
 
@@ -73,7 +73,21 @@ export const getUserData = createAsyncThunk("user/details", async () => {
 
         return (await res).data;
     } catch (error) {
-        toast.error(error.message)        
+        toast.error(error?.response?.data?.message);
+    }
+})
+
+export const changePassword = createAsyncThunk("user/changePassword", async (data) => {
+    try {
+        const res = axiosInstance.post("user/change-password", data);
+        toast.promise(res, {
+            loading: 'Changing password...',
+            success: (data) => data?.data?.message || 'Password changed successfully',
+            error: 'Failed to change password',
+        })
+        return (await res).data;
+    } catch (error) {
+        toast.error(error?.response?.data?.message);
     }
 })
 
