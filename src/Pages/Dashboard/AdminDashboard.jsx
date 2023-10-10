@@ -78,7 +78,7 @@ function AdminDashboard() {
                 </h1>
                 <div className="grid sm:grid-cols-2 gap-5 m-auto mx-2 sm:mx-10">
                     <div className="flex flex-col items-center gap-6 sm:gap-10 sm:p-5 shadow-lg rounded-md">
-                        <div className="w-60 sm:w-80 h-60 sm:h-80">
+                        <div className="w-60 h-60 sm:w-80 sm:h-80">
                             <Pie data={userData} />
                         </div>
                         <div className="grid grid-cols-2 gap-5">
@@ -100,8 +100,8 @@ function AdminDashboard() {
                     </div>
 
                     <div className="flex flex-col items-center gap-6 sm:gap-10 p-2 sm:p-5 shadow-lg rounded-md">
-                        <div className="relative w-full sm:h-80">
-                            <Bar className="sm:absolute bottom-0 h-80 w-full" data={salesData} />
+                        <div className="relative mx-auto w-full sm:h-80">
+                            <Bar className="sm:absolute bottom-0 min-h-38 w-full mx-auto" data={salesData} />
                         </div>
                         <div className="grid grid-cols-2 gap-5">
                             <div className="flex items-center justify-center p-2 sm:p-5 gap-2 sm:gap-5 rounded-md shadow-md">

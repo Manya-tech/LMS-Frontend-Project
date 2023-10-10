@@ -104,7 +104,7 @@ function EditProfile(){
                             Full Name
                         </label>
                         <input 
-                            className="px-2 py-1 border-b-2 focus:outline-none focus:border-b-yellow-600 bg-base-200"
+                            className="px-2 py-1 bg-transparent border-b-2 focus:outline-none focus:border-b-yellow-600 bg-base-200"
                             required 
                             type="text" 
                             name="fullName" 

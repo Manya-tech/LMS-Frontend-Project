@@ -79,17 +79,17 @@ function CreateCourse(){
 
     return (
         <HomeLayout>
-            <div className="flex items-center justify-center h-[90vh]">
+            <div className="flex items-center justify-center min-h-[90vh]">
                 <form
                     onSubmit={onFormSubmit} 
-                    className="p-6 relative flex flex-col justify-center gap-5 rounded-lg text-white w-[80%] sm:w-[700px] shadow-[0_0_10px_black]"
+                    className="p-6 my-10 relative flex flex-col justify-center gap-5 rounded-lg text-white w-[80%] sm:w-[700px] shadow-[0_0_10px_black]"
                 >
                     
                     <Link onClick={()=>navigate(-1)} className="absolute top-8 link text-accent">
                         <AiOutlineArrowLeft className="text-2xl" />
                     </Link>
 
-                    <h1 className="text-center text-4xl font-semibold">Create New Course</h1>
+                    <h1 className="mx-6 text-center text-2xl sm:text-4xl font-semibold">Create New Course</h1>
 
                     <main className="grid sm:grid-cols-2 gap-10 mt-8">
                         <div className="self-center">
