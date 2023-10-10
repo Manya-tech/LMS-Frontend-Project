@@ -61,7 +61,7 @@ function ChangePassword(){
                 <form
                     noValidate
                     onSubmit={handleFormSubmit}
-                    className="flex flex-col justify-center gap-6 rounded-lg p-6 text-white w-96 h-[26rem] shadow-[0_0_10px_black]"
+                    className="flex flex-col justify-center gap-6 rounded-lg p-4 sm:p-6 text-white m-4 w-full sm:w-96 h-[26rem] shadow-[0_0_10px_black]"
                 >
                     <h1 className="text-center text-2xl font-bold">Change Password</h1>
 
@@ -98,8 +98,8 @@ function ChangePassword(){
                     </div>
 
                     <Link to={"/user/profile"}>
-                        <p className="link text-lg text-accent cursor-pointer flex items-center justify-center w-full gap-2">
-                            <AiOutlineArrowLeft /> Back to Profile
+                        <p className="link text-accent cursor-pointer flex items-center justify-center w-full gap-2">
+                            <AiOutlineArrowLeft />Go Back to Profile
                         </p>
                     </Link>
 
