@@ -1,6 +1,6 @@
 # LMS Frontend
 
-### Setup Instructions
+### Setup Instructions Steps
 
 1. Clone the project
 ```
