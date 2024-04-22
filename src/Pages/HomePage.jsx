@@ -8,7 +8,7 @@ function HomePage(){
         <HomeLayout>
             <div className="pt-10 text-white flex flex-col sm:flex-row items-center justify-evenly mx-4 sm:mx-16 h-[90vh]">
                 <iframe
-                    src="https://30days.streamlit.app/?embed=true"
+                    src="https://personalized-planner.streamlit.app/?embed=true"
                     height="450"
                     style="width:100%;border:none;">
                 </iframe>
