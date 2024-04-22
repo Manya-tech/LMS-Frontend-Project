@@ -7,6 +7,11 @@ function HomePage(){
 
         <HomeLayout>
             <div className="pt-10 text-white flex flex-col sm:flex-row items-center justify-evenly mx-4 sm:mx-16 h-[90vh]">
+                <iframe
+                    src="https://30days.streamlit.app/?embed=true"
+                    height="450"
+                    style="width:100%;border:none;">
+                </iframe>
                 <div className="w-full sm:w-1/2 space-y-6">
                     <h1 className="text-4xl text-center sm:text-5xl sm:text-left font-semibold">
                         Find out best&nbsp;
